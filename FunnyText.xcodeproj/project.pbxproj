@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		851C0CE2A90B4FA888A727DA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F14EA82FCB6494189FCEA4A /* libPods.a */; };
 		DC3AFA281773491E00419A3A /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC3AFA271773491E00419A3A /* test.txt */; };
+		DC6423D31773F7A600392783 /* CircleTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6423D21773F7A600392783 /* CircleTextView.m */; };
 		DC96129817732FA70002C291 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC96129717732FA70002C291 /* CoreText.framework */; };
 		DC96129B17732FC00002C291 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96129A17732FC00002C291 /* MainViewController.m */; };
-		DC96129E177330A00002C291 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96129D177330A00002C291 /* CustomView.m */; };
+		DC96129E177330A00002C291 /* ColumnTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96129D177330A00002C291 /* ColumnTextView.m */; };
+		DC982CDC1774331E00225F47 /* AnimationTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC982CDB1774331E00225F47 /* AnimationTextView.m */; };
 		DCB4CD2A17732E3A00C70058 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB4CD2917732E3A00C70058 /* UIKit.framework */; };
 		DCB4CD2C17732E3A00C70058 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB4CD2B17732E3A00C70058 /* Foundation.framework */; };
 		DCB4CD2E17732E3A00C70058 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB4CD2D17732E3A00C70058 /* CoreGraphics.framework */; };
@@ -42,11 +44,15 @@
 		4F14EA82FCB6494189FCEA4A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		83129CBF40FF49A09EB37285 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		DC3AFA271773491E00419A3A /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		DC6423D11773F7A600392783 /* CircleTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleTextView.h; sourceTree = "<group>"; };
+		DC6423D21773F7A600392783 /* CircleTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleTextView.m; sourceTree = "<group>"; };
 		DC96129717732FA70002C291 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		DC96129917732FC00002C291 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DC96129A17732FC00002C291 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		DC96129C177330A00002C291 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
-		DC96129D177330A00002C291 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		DC96129C177330A00002C291 /* ColumnTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnTextView.h; sourceTree = "<group>"; };
+		DC96129D177330A00002C291 /* ColumnTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColumnTextView.m; sourceTree = "<group>"; };
+		DC982CDA1774331E00225F47 /* AnimationTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTextView.h; sourceTree = "<group>"; };
+		DC982CDB1774331E00225F47 /* AnimationTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTextView.m; sourceTree = "<group>"; };
 		DCB4CD2617732E3A00C70058 /* FunnyText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunnyText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB4CD2917732E3A00C70058 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DCB4CD2B17732E3A00C70058 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -135,8 +141,12 @@
 				DCB4CD3917732E3A00C70058 /* AppDelegate.m */,
 				DC96129917732FC00002C291 /* MainViewController.h */,
 				DC96129A17732FC00002C291 /* MainViewController.m */,
-				DC96129C177330A00002C291 /* CustomView.h */,
-				DC96129D177330A00002C291 /* CustomView.m */,
+				DC96129C177330A00002C291 /* ColumnTextView.h */,
+				DC96129D177330A00002C291 /* ColumnTextView.m */,
+				DC6423D11773F7A600392783 /* CircleTextView.h */,
+				DC6423D21773F7A600392783 /* CircleTextView.m */,
+				DC982CDA1774331E00225F47 /* AnimationTextView.h */,
+				DC982CDB1774331E00225F47 /* AnimationTextView.m */,
 				DCB4CD3017732E3A00C70058 /* Supporting Files */,
 			);
 			path = FunnyText;
@@ -318,7 +328,9 @@
 				DCB4CD3617732E3A00C70058 /* main.m in Sources */,
 				DCB4CD3A17732E3A00C70058 /* AppDelegate.m in Sources */,
 				DC96129B17732FC00002C291 /* MainViewController.m in Sources */,
-				DC96129E177330A00002C291 /* CustomView.m in Sources */,
+				DC96129E177330A00002C291 /* ColumnTextView.m in Sources */,
+				DC6423D31773F7A600392783 /* CircleTextView.m in Sources */,
+				DC982CDC1774331E00225F47 /* AnimationTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

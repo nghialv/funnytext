@@ -1,14 +1,14 @@
 //
-//  CustomView.m
+//  ColumnTextView.m
 //  FunnyText
 //
 //  Created by iNghia on 6/20/13.
 //  Copyright (c) 2013 nghialv. All rights reserved.
 //
 
-#import "CustomView.h"
+#import "ColumnTextView.h"
 
-@implementation CustomView
+@implementation ColumnTextView
 @synthesize attString = m_attString;
 @synthesize colMargin = m_colMargin;
 @synthesize numOfColumns = m_numOfColumns;
